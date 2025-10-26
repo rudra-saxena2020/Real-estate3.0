@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style>body {transition: opacity ease-in 0.2s; } 
+body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relative; } 
+</style>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>InderLal Constructions – Building Your Dreams with Integrity &amp; Excellence</title>
+  <meta name="description" content="InderLal Constructions – Founded by Vivek Gupta, delivering premium quality construction across North India. Trusted by clients with 99% returning for new projects.">
+  <link rel="stylesheet" href="./InderLal Constructions_files/all.min.css">
+  <!-- AOS – Animate On Scroll -->
+  <link href="./InderLal Constructions_files/aos.css" rel="stylesheet">
+  <style>
+    /* ==== RESET & VARIABLES ==== */
+    *{margin:0;padding:0;box-sizing:border-box;}
+    :root{
+      --primary:#c7a05f;--primary-dark:#b08f4f;--secondary:#1a1a1a;--light:#f9f9f9;--white:#fff;--gray:#666;--transition:all .4s cubic-bezier(.175,.885,.32,1.275);
+    }
+    body{font-family:"Segoe UI",Tahoma,Geneva,Verdana,sans-serif;line-height:1.7;color:var(--secondary);overflow-x:hidden;scroll-behavior:smooth;}
+    img{max-width:100%;display:block;}
+
+    /* ==== HEADER ==== */
+    header{position:fixed;top:0;width:100%;z-index:1000;background:rgba(255,255,255,.98);backdrop-filter:blur(10px);box-shadow:0 2px 20px rgba(0,0,0,.08);transition:var(--transition);}
+    header.scrolled{padding:.5rem 0;box-shadow:0 5px 20px rgba(0,0,0,.1);}
+    nav{display:flex;justify-content:space-between;align-items:center;padding:1.2rem 6%;max-width:1400px;margin:auto;}
+    .logo{font-size:1.7rem;font-weight:700;color:var(--secondary);text-transform:uppercase;letter-spacing:.5px;}
+    .logo span{color:var(--primary);}
+    .mobile-menu-toggle{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:5px;z-index:1001;}
+    .mobile-menu-toggle span{width:28px;height:3px;background:var(--secondary);border-radius:2px;transition:var(--transition);}
+    .mobile-menu-toggle.active span:nth-child(1){transform:rotate(45deg) translate(6px,6px);}
+    .mobile-menu-toggle.active span:nth-child(2){opacity:0;}
+    .mobile-menu-toggle.active span:nth-child(3){transform:rotate(-45deg) translate(6px,-6px);}
+    .nav-links{display:flex;list-style:none;gap:2.5rem;}
+    .nav-links a{color:var(--secondary);text-decoration:none;font-weight:500;font-size:.95rem;transition:var(--transition);position:relative;}
+    .nav-links a::after{content:"";position:absolute;bottom:-5px;left:0;width:0;height:2px;background:var(--primary);transition:width .3s ease;}
+    .nav-links a:hover::after{width:100%;}
+    .nav-links a:hover{color:var(--primary);}
+
+    /* ==== HERO ==== */
+    .hero{height:100vh;position:relative;display:flex;align-items:center;justify-content:center;text-align:center;color:var(--white);overflow:hidden;margin-top:75px;}
+    .hero video{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;z-index:-2;}
+    .hero-overlay{position:absolute;top:0;left:0;width:100%;height:100%;background:linear-gradient(135deg,rgba(26,26,26,.85),rgba(60,60,60,.85));z-index:-1;}
+    .hero-content{max-width:1000px;padding:2rem;position:relative;z-index:1;}
+    .hero h1{font-size:3.8rem;margin-bottom:1.5rem;font-weight:700;line-height:1.2;text-shadow:2px 2px 4px rgba(0,0,0,.3);}
+    .hero h1 span{color:var(--primary);}
+    .hero .tagline{font-size:1.5rem;margin-bottom:1rem;color:var(--primary);font-weight:600;letter-spacing:1px;}
+    .hero p{font-size:1.2rem;margin-bottom:2.5rem;line-height:1.7;color:#f0f0f0;}
+    .cta-buttons{display:flex;gap:1.5rem;justify-content:center;flex-wrap:wrap;}
+    .btn{padding:1.1rem 2.8rem;border:none;border-radius:5px;font-size:1rem;font-weight:600;cursor:pointer;transition:var(--transition);text-decoration:none;display:inline-block;text-transform:uppercase;letter-spacing:.5px;}
+    .btn-primary{background:var(--primary);color:var(--white);}
+    .btn-primary:hover{background:var(--primary-dark);transform:translateY(-3px);box-shadow:0 8px 20px rgba(199,160,95,.4);}
+    .btn-secondary{background:transparent;color:var(--white);border:2px solid var(--white);}
+    .btn-secondary:hover{background:var(--white);color:var(--secondary);transform:translateY(-3px);}
+
+    /* ==== STATS ==== */
+    .stats{background:var(--secondary);padding:4rem 6%;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:2rem;text-align:center;color:var(--white);}
+    .stat-item{padding:2rem 1rem;transition:var(--transition);}
+    .stat-item:hover{transform:translateY(-8px);}
+    .stat-number{font-size:3.5rem;font-weight:700;color:var(--primary);margin-bottom:.5rem;}
+    .stat-label{font-size:1rem;opacity:.9;text-transform:uppercase;letter-spacing:1px;}
+
+    /* ==== SECTION COMMON ==== */
+    .section{padding:6rem 6%;max-width:1400px;margin:auto;}
+    .section-title{text-align:center;font-size:2.8rem;margin-bottom:1rem;color:var(--secondary);position:relative;font-weight:700;}
+    .section-title::after{content:"";display:block;width:100px;height:4px;background:var(--primary);margin:1.5rem auto;}
+    .section-subtitle{text-align:center;font-size:1.2rem;color:var(--gray);margin-bottom:4rem;font-style:italic;}
+
+    /* ==== INTRO ==== */
+    .intro{background:var(--light);text-align:center;}
+    .intro h2{font-size:2.8rem;color:var(--secondary);margin-bottom:1.5rem;}
+    .intro h2 span{color:var(--primary);}
+    .intro p{font-size:1.15rem;color:var(--gray);line-height:1.9;margin-bottom:1.5rem;text-align:justify;max-width:1100px;margin-left:auto;margin-right:auto;}
+
+    /* ==== ABOUT ==== */
+    .about{background:var(--white);}
+    .about-content{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start;margin-top:3rem;}
+    .about-text h3,.about-box h3{font-size:2rem;color:var(--secondary);margin-bottom:1.5rem;font-weight:700;}
+    .about-text p,.about-box p{font-size:1.05rem;color:var(--gray);margin-bottom:1.5rem;line-height:1.9;text-align:justify;}
+    .about-box{background:linear-gradient(135deg,var(--light) 0%,#f0f0f0 100%);border-left:5px solid var(--primary);padding:3rem;border-radius:8px;box-shadow:0 5px 25px rgba(0,0,0,.08);}
+    .founder-message{background:var(--secondary);color:var(--white);padding:3rem;border-radius:8px;margin-top:3rem;border-left:5px solid var(--primary);}
+    .founder-message p{font-size:1.2rem;font-style:italic;line-height:1.9;margin-bottom:1.5rem;}
+    .founder-message .author{font-size:1rem;color:var(--primary);font-weight:600;font-style:normal;}
+
+    /* ==== VALUES ==== */
+    .values{background:var(--light);}
+    .values-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:2.5rem;max-width:1400px;margin:auto;}
+    .value-card{background:var(--white);padding:3rem;border-radius:8px;box-shadow:0 5px 25px rgba(0,0,0,.08);transition:var(--transition);border-top:4px solid var(--primary);}
+    .value-card:hover{transform:translateY(-8px);box-shadow:0 10px 40px rgba(0,0,0,.12);}
+    .value-icon{font-size:3rem;margin-bottom:1.5rem;}
+    .value-card h3{font-size:1.6rem;color:var(--secondary);margin-bottom:1rem;font-weight:700;}
+    .value-card h4{font-size:1.1rem;color:var(--primary);margin-bottom:1rem;font-style:italic;}
+    .value-card p{color:var(--gray);line-height:1.9;font-size:1rem;text-align:justify;}
+
+    /* ==== SERVICES ==== */
+    .services{background:var(--white);}
+    .services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(350px,1fr));gap:2.5rem;max-width:1400px;margin:3rem auto 0;}
+    .service-card{background:var(--white);border-radius:12px;overflow:hidden;box-shadow:0 8px 30px rgba(0,0,0,.1);transition:var(--transition);display:flex;flex-direction:column;height:100%;}
+    .service-card:hover{transform:translateY(-10px);box-shadow:0 15px 40px rgba(0,0,0,.15);}
+    .service-image{height:220px;overflow:hidden;}
+    .service-image img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease;}
+    .service-card:hover .service-image img{transform:scale(1.05);}
+    .service-content{padding:2rem;display:flex;flex-direction:column;flex-grow:1;}
+    .service-card h3{font-size:1.5rem;color:var(--secondary);margin-bottom:1rem;font-weight:700;position:relative;padding-bottom:.8rem;}
+    .service-card h3::after{content:"";position:absolute;bottom:0;left:0;width:50px;height:3px;background:var(--primary);}
+    .service-card p{color:var(--gray);line-height:1.7;font-size:1rem;margin-bottom:1.5rem;flex-grow:1;}
+    .service-features{margin-top:auto;padding-top:1rem;border-top:1px solid #eee;}
+    .service-features li{padding:.3rem 0;color:#555;position:relative;padding-left:1.5rem;}
+    .service-features li::before{content:"✓";position:absolute;left:0;color:var(--primary);font-weight:bold;}
+
+    /* ==== PROJECTS GALLERY ==== */
+    .projects-gallery{background:var(--light);}
+    .gallery-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1.5rem;}
+    .gallery-item{position:relative;overflow:hidden;border-radius:8px;box-shadow:0 4px 15px rgba(0,0,0,.1);}
+    .gallery-item img{width:100%;height:100%;object-fit:cover;transition:transform .6s ease;}
+    .gallery-item:hover img{transform:scale(1.1);}
+    .gallery-overlay{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(0,0,0,.7));color:#fff;padding:1.5rem .8rem;transform:translateY(100%);transition:transform .4s ease;}
+    .gallery-item:hover .gallery-overlay{transform:translateY(0);}
+    .gallery-overlay h4{font-size:1.2rem;margin-bottom:.3rem;}
+    .gallery-overlay p{font-size:.9rem;opacity:.9;}
+
+    /* ==== REVIEWS ==== */
+    .reviews{background:var(--secondary);color:var(--white);padding:6rem 6%;}
+    .reviews-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:2rem;max-width:1400px;margin:auto;}
+    .review-card{background:rgba(255,255,255,.05);padding:2.5rem;border-radius:8px;position:relative;}
+    .review-card::before{content:"“";font-size:5rem;position:absolute;top:-1rem;left:1rem;color:var(--primary);opacity:.2;}
+    .review-text{font-size:1.1rem;line-height:1.8;margin-bottom:1.5rem;font-style:italic;}
+    .review-author{display:flex;align-items:center;gap:1rem;}
+    .review-author img{width:50px;height:50px;border-radius:50%;object-fit:cover;}
+    .review-author div h4{font-size:1rem;font-weight:600;color:var(--primary);}
+    .review-author div p{font-size:.85rem;opacity:.8;}
+
+    /* ==== WHY CHOOSE ==== */
+    .why-choose{background:var(--secondary);color:var(--white);}
+    .why-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:2.5rem;max-width:1400px;margin:3rem auto 0;}
+    .why-card{text-align:center;padding:2rem;background:rgba(255,255,255,.05);border-radius:8px;transition:var(--transition);}
+    .why-card:hover{background:rgba(255,255,255,.1);transform:translateY(-5px);}
+    .why-icon{font-size:3rem;margin-bottom:1.5rem;color:var(--primary);}
+    .why-card h3{font-size:1.3rem;margin-bottom:1rem;color:var(--white);}
+    .why-card p{color:#ddd;line-height:1.8;}
+
+    /* ==== CONTACT ==== */
+    .contact{background:var(--white);}
+    .contact-content{display:grid;grid-template-columns:1fr 1fr;gap:4rem;margin-top:3rem;}
+    .contact-info{background:linear-gradient(135deg,var(--secondary) 0%,#2a2a2a 100%);color:var(--white);padding:3.5rem;border-radius:8px;box-shadow:0 5px 25px rgba(0,0,0,.15);}
+    .contact-info h3{font-size:2rem;margin-bottom:2.5rem;color:var(--primary);font-weight:700;}
+    .contact-item{display:flex;align-items:flex-start;margin-bottom:2.5rem;gap:1.5rem;}
+    .contact-item-icon{font-size:1.8rem;color:var(--primary);min-width:35px;}
+    .contact-item-text h4{font-size:1.1rem;margin-bottom:.5rem;font-weight:600;color:var(--primary);}
+    .contact-item-text p{opacity:.9;line-height:1.7;font-size:1rem;}
+    .contact-item-text a{color:var(--white);text-decoration:none;transition:color .3s;}
+    .contact-item-text a:hover{color:var(--primary);}
+    .contact-form{background:var(--light);padding:3.5rem;border-radius:8px;border:2px solid #e0e0e0;}
+    .form-group{margin-bottom:1.8rem;}
+    .form-group label{display:block;margin-bottom:.7rem;font-weight:600;color:#333;font-size:1rem;}
+    .form-group input,.form-group textarea,.form-group select{width:100%;padding:1rem;border:2px solid #ddd;border-radius:5px;font-size:1rem;transition:border-color .3s ease;font-family:inherit;}
+    .form-group input:focus,.form-group textarea:focus,.form-group select:focus{outline:none;border-color:var(--primary);}
+    .form-group textarea{resize:vertical;min-height:140px;}
+
+    /* ==== FOOTER ==== */
+    footer{background:linear-gradient(135deg,#0a0a0a 0%,var(--secondary) 100%);color:var(--white);padding:5rem 6% 0;position:relative;overflow:hidden;}
+    footer::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,transparent,var(--primary),transparent);}
+    .footer-content{max-width:1400px;margin:auto;}
+    .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1.5fr;gap:4rem;margin-bottom:4rem;}
+    .footer-section h3{color:var(--primary);margin-bottom:1.8rem;font-size:1.4rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;}
+    .footer-about p{color:#bbb;line-height:1.9;margin-bottom:1.5rem;font-size:.95rem;}
+    .footer-stats{display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem;margin-top:2rem;}
+    .footer-stat{background:rgba(199,160,95,.1);padding:1.2rem;border-radius:5px;border-left:3px solid var(--primary);}
+    .footer-stat-number{font-size:1.8rem;font-weight:700;color:var(--primary);display:block;margin-bottom:.3rem;}
+    .footer-stat-label{font-size:.85rem;color:#aaa;text-transform:uppercase;letter-spacing:.5px;}
+    .footer-section ul li{margin-bottom:1rem;}
+    .footer-section ul li a{color:#bbb;text-decoration:none;transition:var(--transition);display:inline-block;font-size:.95rem;}
+    .footer-section ul li a::before{content:"▸";color:var(--primary);margin-right:8px;opacity:0;transition:opacity .3s ease;}
+    .footer-section ul li a:hover::before{opacity:1;}
+    .footer-section ul li a:hover{color:var(--primary);padding-left:15px;}
+    .footer-social{display:flex;gap:1rem;margin-top:2rem;}
+    .social-icon{width:45px;height:45px;background:rgba(199,160,95,.1);border:2px solid rgba(199,160,95,.3);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--primary);font-size:1.2rem;transition:var(--transition);}
+    .social-icon:hover{background:var(--primary);color:var(--white);transform:translateY(-3px);box-shadow:0 5px 15px rgba(199,160,95,.4);}
+    .footer-bottom{border-top:1px solid rgba(255,255,255,.1);padding:2.5rem 0;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;}
+    .footer-bottom-left{color:#888;font-size:.9rem;}
+    .footer-bottom-left span{color:var(--primary);}
+    .footer-bottom-right{display:flex;gap:2rem;}
+    .footer-bottom-right a{color:#888;text-decoration:none;font-size:.9rem;transition:color .3s ease;}
+    .footer-bottom-right a:hover{color:var(--primary);}
+
+    /* ==== RESPONSIVE ==== */
+    @media (max-width:1024px){
+      .footer-grid{grid-template-columns:repeat(2,1fr);}
+      .footer-about{grid-column:1/-1;}
+    }
+    @media (max-width:968px){
+      .mobile-menu-toggle{display:flex;}
+      .nav-links{position:fixed;top:0;right:-100%;width:80%;height:100vh;background:var(--white);flex-direction:column;justify-content:center;align-items:center;transition:var(--transition);box-shadow:-5px 0 15px rgba(0,0,0,.1);z-index:1000;}
+      .nav-links.active{right:0;}
+      .hero{margin-top:70px;height:90vh;}
+      .hero h1{font-size:2.2rem;}
+      .hero .tagline{font-size:1.1rem;}
+      .hero p{font-size:1rem;}
+      .cta-buttons{flex-direction:column;}
+      .btn{width:100%;text-align:center;}
+      .about-content,.contact-content{grid-template-columns:1fr;gap:2.5rem;}
+      .stats{grid-template-columns:repeat(2,1fr);gap:1.5rem;padding:3rem 4%;}
+      .stat-item{border-right:none;border-bottom:1px solid rgba(255,255,255,.1);padding:1.5rem .5rem;}
+      .stat-item:last-child{border-bottom:none;}
+      .stat-number{font-size:2.8rem;}
+      .section-title{font-size:2rem;}
+      .section-subtitle{font-size:1rem;}
+      nav{padding:1rem 4%;}
+      .logo{font-size:1.4rem;}
+      .section{padding:4rem 4%;}
+      .values-grid,.services-grid,.why-grid,.gallery-grid,.reviews-grid{grid-template-columns:1fr;gap:2rem;}
+      .footer-grid{grid-template-columns:1fr;gap:2.5rem;}
+      .footer-about{grid-column:auto;}
+      .footer-stats{grid-template-columns:1fr;}
+      .footer-bottom{flex-direction:column;text-align:center;}
+      .footer-bottom-right{justify-content:center;}
+    }
+    @media (max-width:640px){
+      .hero h1{font-size:1.8rem;}
+      .hero .tagline{font-size:1rem;}
+      .hero p{font-size:.95rem;}
+      .stats{grid-template-columns:1fr;}
+      .stat-number{font-size:2.5rem;}
+      .section-title{font-size:1.75rem;}
+      .intro h2,.about-text h3,.about-box h3{font-size:1.8rem;}
+      .value-icon,.why-icon{font-size:2.5rem;}
+      .contact-info,.contact-form{padding:2rem;}
+      .footer-social{justify-content:center;}
+    }
+  </style>
+</head>
+<body data-aos-easing="ease-out-quart" data-aos-duration="800" data-aos-delay="0">
+
+<!-- ==== HEADER ==== -->
+<header class="scrolled">
+  <nav>
+    <div class="logo">Inderlal<span>Constructions</span></div>
+    <div class="mobile-menu-toggle"><span></span><span></span><span></span></div>
+    <ul class="nav-links">
+      <li><a href="http://127.0.0.1:5500/index.html#home">Home</a></li>
+      <li><a href="http://127.0.0.1:5500/index.html#about">About</a></li>
+      <li><a href="http://127.0.0.1:5500/index.html#values">Values</a></li>
+      <li><a href="http://127.0.0.1:5500/index.html#services">Services</a></li>
+      <li><a href="http://127.0.0.1:5500/index.html#projects">Projects</a></li>
+      <li><a href="http://127.0.0.1:5500/index.html#gallery">Gallery</a></li>
+      <li><a href="http://127.0.0.1:5500/index.html#reviews">Reviews</a></li>
+      <li><a href="http://127.0.0.1:5500/index.html#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- ==== HERO (working MP4 fallback) ==== -->
+<section id="home" class="hero">
+  <video autoplay="" muted="" loop="" playsinline="" poster="https://images.unsplash.com/photo-1518780664697-55e3ad937233?auto=format&amp;fit=crop&amp;w=1600&amp;q=80">
+    <source src="https://inderlalconstructions.com/video/hero-construction.mp4" type="video/mp4">
+    <!-- Fallback image -->
+  </video>
+  <div class="hero-overlay"></div>
+  <div class="hero-content aos-init aos-animate" data-aos="fade-up">
+    <div class="tagline">Building Your Dreams with Integrity &amp; Excellence</div>
+    <h1>From <span>Humble Beginnings</span><br>to Landmark Legacies</h1>
+    <p>Since our foundation, we deliver more than structures – we build trust. Every brick laid and beam erected carries our promise of quality, honesty and enduring goodwill.</p>
+    <div class="cta-buttons">
+      <a href="http://127.0.0.1:5500/index.html#projects" class="btn btn-primary">Explore Our Projects</a>
+      <a href="http://127.0.0.1:5500/index.html#contact" class="btn btn-secondary">Request a Consultation</a>
+    </div>
+  </div>
+</section>
+
+<!-- ==== STATS ==== -->
+<section class="stats">
+  <div class="stat-item aos-init aos-animate" data-aos="fade-up" data-aos-delay="100"><div class="stat-number">20+</div><div class="stat-label">Years of Excellence</div></div>
+  <div class="stat-item aos-init aos-animate" data-aos="fade-up" data-aos-delay="200"><div class="stat-number">99%</div><div class="stat-label">Client Return Rate</div></div>
+  <div class="stat-item aos-init aos-animate" data-aos="fade-up" data-aos-delay="300"><div class="stat-number">100+</div><div class="stat-label">Projects Delivered</div></div>
+  <div class="stat-item aos-init aos-animate" data-aos="fade-up" data-aos-delay="400"><div class="stat-number">₹400+ Cr</div><div class="stat-label">Total Contract Value</div></div>
+</section>
+
+<!-- ==== INTRO ==== -->
+<section class="intro section">
+  <div class="intro-content aos-init aos-animate" data-aos="fade-up">
+    <h2>Welcome to <span>InderLal Constructions</span></h2>
+    <p>At InderLal Constructions, every brick laid and beam erected carries our promise of quality, honesty and enduring goodwill. Founded by Vivek Gupta, we understand that your vision is our mission.</p>
+    <p>Over the years we have built a legacy of trust and excellence in North India – in education, healthcare, residential, commercial and institutional developments. Our philosophy is centred around one core belief: goodwill is our greatest asset.</p>
+    <p>As such, we are proud to say that 99% of our previous clients return to us for their next project – a testament to the relationships we build alongside structures.</p>
+  </div>
+</section>
+
+<!-- ==== ABOUT ==== -->
+<section id="about" class="about section">
+  <h2 class="section-title">About InderLal Constructions</h2>
+  <p class="section-subtitle">"Your Vision. Our Expertise. One Solid Foundation."</p>
+  <div class="about-content">
+    <div class="about-text aos-init aos-animate" data-aos="fade-right">
+      <h3>Our Story</h3>
+      <p>InderLal Constructions was founded by Vivek Gupta with a singular purpose: to help clients realise their dreams through top-quality construction and absolute integrity.</p>
+      <p>Over the years we have built a legacy of trust and excellence in North India – in education, healthcare, residential, commercial and institutional developments. Our philosophy is centred around one core belief: goodwill is our greatest asset.</p>
+      <p>As such, we are proud to say that 99% of our previous clients return to us for their next project – a testament to the relationships we build alongside structures.</p>
+    </div>
+    <div class="about-box aos-init aos-animate" data-aos="fade-left">
+      <h3>Vision &amp; Mission</h3>
+      <h4>Vision</h4><p>To be the most trusted construction partner in the region, delivering structures that stand the test of time and relationships that stand the test of trust.</p>
+      <h4>Mission</h4>
+      <p>• Deliver uncompromising quality construction with best-in-class materials and modern methods.</p>
+      <p>• Align ourselves with our clients' dreams and deliver on time, every time.</p>
+      <p>• Build lasting relationships rooted in integrity, transparency and mutual respect.</p>
+      <p>• Continuously raise the bar in safety, sustainability and design.</p>
+    </div>
+  </div>
+  <div class="founder-message aos-init aos-animate" data-aos="fade-up">
+    <p>"When I launched InderLal Constructions, I made a single promise – that we would build more than buildings; we would build relationships that last generations. For us, the structure is one output, but trust is the foundation."</p>
+    <div class="author">– Vivek Gupta, Founder &amp; Managing Director</div>
+  </div>
+</section>
+
+<!-- ==== VALUES ==== -->
+<section id="values" class="values section">
+  <h2 class="section-title">Our Core Values</h2>
+  <p class="section-subtitle">The Foundations That Hold Every Structure We Build</p>
+  <div class="values-grid">
+    <div class="value-card aos-init aos-animate" data-aos="zoom-in"><div class="value-icon">Integrity</div><h3>Integrity</h3><h4>The Bedrock of Every Decision</h4><p>At InderLal Constructions, integrity is non-negotiable. Every brick we lay and every promise we make is backed by honesty, transparency, and accountability.</p></div>
+    <div class="value-card aos-init aos-animate" data-aos="zoom-in" data-aos-delay="100"><div class="value-icon">Quality</div><h3>Quality</h3><h4>Building Beyond Standards</h4><p>Quality is not a target for us – it's our default mode of operation. We go beyond standard compliance to ensure that every project reflects excellence, durability, and craftsmanship.</p></div>
+    <div class="value-card aos-init aos-animate" data-aos="zoom-in" data-aos-delay="200"><div class="value-icon">Commitment</div><h3>Commitment</h3><h4>Delivering on Every Promise</h4><p>We understand that construction is not just about materials; it's about trust and timelines. Our commitment extends from project planning to final handover.</p></div>
+    <div class="value-card aos-init aos-animate" data-aos="zoom-in" data-aos-delay="300"><div class="value-icon">Goodwill</div><h3>Goodwill</h3><h4>Our True Measure of Success</h4><p>While others measure success in square feet, we measure it in goodwill. Every project is an opportunity to create lasting relationships.</p></div>
+    <div class="value-card aos-init aos-animate" data-aos="zoom-in" data-aos-delay="400"><div class="value-icon">Sustainability</div><h3>Sustainability</h3><h4>Building Responsibly for Tomorrow</h4><p>We build not just for today, but for the generations to come. We practice sustainable building principles that minimize environmental impact.</p></div>
+  </div>
+</section>
+
+<!-- ==== SERVICES ==== -->
+<section id="services" class="services section">
+  <h2 class="section-title">Our Services</h2>
+  <p class="section-subtitle">"Your Vision. Our Expertise. One Solid Foundation."</p>
+  <div class="services-grid">
+    <!-- Service cards (same as before, just added AOS) -->
+    <div class="service-card aos-init aos-animate" data-aos="fade-up">
+      <div class="service-image"><img loading="lazy" src="./InderLal Constructions_files/photo-1541888946425-d81bb19240f5" alt="Turn-key Construction"></div>
+      <div class="service-content"><h3>Turn-key Construction Services</h3><p>Complete construction solutions from concept to completion. We handle every aspect of your project with precision and professionalism.</p><div class="service-features"><ul><li>End-to-end project management</li><li>Quality assurance at every stage</li><li>Timely delivery guaranteed</li></ul></div></div>
+    </div>
+    <!-- Repeat for other services (omitted for brevity – keep the original cards) -->
+  </div>
+</section>
+
+<!-- ==== PROJECTS GALLERY (NEW) ==== -->
+<section id="gallery" class="projects-gallery section">
+  <h2 class="section-title">Project Gallery</h2>
+  <p class="section-subtitle">A Visual Journey Through Our Landmark Projects</p>
+  <div class="gallery-grid">
+    <div class="gallery-item aos-init aos-animate" data-aos="zoom-in"><img loading="lazy" src="./InderLal Constructions_files/photo-1518780664697-55e3ad937233" alt="OTM Housing"><div class="gallery-overlay"><h4>OTM Housing Clement Town</h4><p>₹61 Crore | 2019-2023</p></div></div>
+    <div class="gallery-item aos-init aos-animate" data-aos="zoom-in" data-aos-delay="100"><img loading="lazy" src="./InderLal Constructions_files/photo-1503387762-592deb58ef4e" alt="Welham Boys"><div class="gallery-overlay"><h4>South Block Welham Boys</h4><p>₹17 Crore | 2023-24</p></div></div>
+    <div class="gallery-item aos-init aos-animate" data-aos="zoom-in" data-aos-delay="200"><img loading="lazy" src="./InderLal Constructions_files/photo-1519494026892-80bbd2d6fd0d" alt="Kanishk Hospital"><div class="gallery-overlay"><h4>Kanishk Hospital – Phase 2</h4><p>₹6.5 Crore | 2024-25</p></div></div>
+    <div class="gallery-item aos-init aos-animate" data-aos="zoom-in" data-aos-delay="300"><img loading="lazy" src="./InderLal Constructions_files/photo-1562774053-701939374585" alt="Commercial Complex"><div class="gallery-overlay"><h4>Batta Hyundai, Saharanpur Road</h4><p>₹9 Crore | Ongoing</p></div></div>
+    <!-- Add more as needed -->
+  </div>
+</section>
+
+<!-- ==== CLIENT REVIEWS (NEW) ==== -->
+<section id="reviews" class="reviews">
+  <h2 class="section-title">Client Testimonials</h2>
+  <p class="section-subtitle">What Our Partners Say About Us</p>
+  <div class="reviews-grid">
+    <div class="review-card aos-init aos-animate" data-aos="fade-up">
+      <p class="review-text">"InderLal delivered our school building ahead of schedule with impeccable quality. Their transparency and commitment are unmatched."</p>
+      <div class="review-author"><img src="./InderLal Constructions_files/32.jpg" alt="Dr. Rajesh"><div><h4>Dr. Rajesh Mehta</h4><p>Principal, Welham Boys School</p></div></div>
+    </div>
+    <div class="review-card aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+      <p class="review-text">"From planning to execution, every detail was handled professionally. We are already planning our next project with them."</p>
+      <div class="review-author"><img src="./InderLal Constructions_files/44.jpg" alt="Mrs. Singh"><div><h4>Mrs. Anjali Singh</h4><p>Director, Oppulence Housing Society</p></div></div>
+    </div>
+    <div class="review-card aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+      <p class="review-text">"Their attention to medical-grade standards gave us complete peace of mind for our hospital expansion."</p>
+      <div class="review-author"><img src="./InderLal Constructions_files/68.jpg" alt="Dr. Gupta"><div><h4>Dr. Sanjay Gupta</h4><p>CEO, Kanishk Hospital</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ==== WHY CHOOSE ==== -->
+<section class="why-choose section">
+  <h2 class="section-title">Why Choose Us</h2>
+  <p class="section-subtitle">"Experience. Loyalty. Excellence. Delivered."</p>
+  <div class="why-grid">
+    <div class="why-card aos-init aos-animate" data-aos="flip-left"><div class="why-icon">Two Decades of Expertise</div><h3>Two Decades of Expertise</h3><p>Over 20 years of delivering high-quality construction projects across North India with proven excellence.</p></div>
+    <div class="why-card aos-init aos-animate" data-aos="flip-left" data-aos-delay="100"><div class="why-icon">99% Client Return Rate</div><h3>99% Client Return Rate</h3><p>A remarkable client loyalty rate – our clients trust us enough to return for their next projects.</p></div>
+    <div class="why-card aos-init aos-animate" data-aos="flip-left" data-aos-delay="200"><div class="why-icon">Consistent Delivery</div><h3>Consistent Delivery</h3><p>We deliver on our promises – meeting timelines, budgets, and quality standards without compromise.</p></div>
+    <div class="why-card aos-init aos-animate" data-aos="flip-left" data-aos-delay="300"><div class="why-icon">Multi-Sector Versatility</div><h3>Multi-Sector Versatility</h3><p>Expertise across educational, healthcare, residential, commercial and institutional developments.</p></div>
+    <div class="why-card aos-init aos-animate" data-aos="flip-left" data-aos-delay="400"><div class="why-icon">Uncompromising Ethics</div><h3>Uncompromising Ethics</h3><p>Our reputation is built on integrity, transparency and lasting goodwill with every stakeholder.</p></div>
+    <div class="why-card aos-init aos-animate" data-aos="flip-left" data-aos-delay="500"><div class="why-icon">Full-Service Approach</div><h3>Full-Service Approach</h3><p>From design coordination to execution, supervision and hand-over – we manage it all.</p></div>
+  </div>
+</section>
+
+<!-- ==== CONTACT ==== -->
+<section id="contact" class="contact section">
+  <h2 class="section-title">Contact Us</h2>
+  <p class="section-subtitle">"Let's Build Your Next Chapter Together."</p>
+  <div class="contact-content">
+    <div class="contact-info aos-init aos-animate" data-aos="fade-right">
+      <h3>Get In Touch</h3>
+      <div class="contact-item"><div class="contact-item-icon">Office Address</div><div class="contact-item-text"><h4>Office Address</h4><p>32, Krishna Vihar, Jakhan<br>Dehradun, Uttarakhand</p></div></div>
+      <div class="contact-item"><div class="contact-item-icon">Phone</div><div class="contact-item-text"><h4>Phone</h4><p><a href="tel:+919837244667">+91 9837244667</a></p></div></div>
+      <div class="contact-item"><div class="contact-item-icon">Email</div><div class="contact-item-text"><h4>Email</h4><p><a href="mailto:vivekg1704@gmail.com">vivekg1704@gmail.com</a></p></div></div>
+      <div class="contact-item"><div class="contact-item-icon">Website</div><div class="contact-item-text"><h4>Website</h4><p><a href="http://www.inderlalconstructions.com/" target="_blank">www.inderlalconstructions.com</a></p></div></div>
+    </div>
+    <div class="contact-form aos-init aos-animate" data-aos="fade-left">
+      <form onsubmit="alert(&#39;Thank you! We will contact you soon.&#39;);return false;">
+        <div class="form-group"><label for="name">Full Name *</label><input type="text" id="name" required="" fdprocessedid="uj4nnc"></div>
+        <div class="form-group"><label for="email">Email Address *</label><input type="email" id="email" required="" fdprocessedid="gyd02n"></div>
+        <div class="form-group"><label for="phone">Phone Number *</label><input type="tel" id="phone" required="" fdprocessedid="w2or8ue"></div>
+        <div class="form-group"><label for="project-type">Project Type</label><select id="project-type" fdprocessedid="mhmpox"><option>Select Project Type</option><option>Residential</option><option>Commercial</option><option>Institutional</option><option>Healthcare</option><option>Renovation</option><option>Other</option></select></div>
+        <div class="form-group"><label for="message">Your Message</label><textarea id="message" placeholder="Tell us about your project requirements..."></textarea></div>
+        <button type="submit" class="btn btn-primary" style="width:100%;" fdprocessedid="pgiej3">Request a Free Consultation</button>
+      </form>
+      <p style="margin-top:1.5rem;text-align:center;color:#666;font-size:.9rem;">We look forward to making your vision our next success story.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ==== FOOTER ==== -->
+<footer>
+  <div class="footer-content">
+    <div class="footer-grid">
+      <div class="footer-section footer-about">
+        <h3>InderLal Constructions</h3>
+        <p>Building dreams with integrity and excellence for over two decades. Founded by Vivek Gupta, we deliver premium quality construction across North India with an unmatched 99% client return rate.</p>
+        <div class="footer-stats">
+          <div class="footer-stat"><span class="footer-stat-number">20+</span><span class="footer-stat-label">Years Experience</span></div>
+          <div class="footer-stat"><span class="footer-stat-number">99%</span><span class="footer-stat-label">Client Return Rate</span></div>
+          <div class="footer-stat"><span class="footer-stat-number">100+</span><span class="footer-stat-label">Projects Completed</span></div>
+          <div class="footer-stat"><span class="footer-stat-number">₹400+Cr</span><span class="footer-stat-label">Total Value</span></div>
+        </div>
+      </div>
+      <div class="footer-section"><h3>Quick Links</h3><ul><li><a href="http://127.0.0.1:5500/index.html#home">Home</a></li><li><a href="http://127.0.0.1:5500/index.html#about">About Us</a></li><li><a href="http://127.0.0.1:5500/index.html#values">Our Values</a></li><li><a href="http://127.0.0.1:5500/index.html#services">Services</a></li><li><a href="http://127.0.0.1:5500/index.html#gallery">Gallery</a></li><li><a href="http://127.0.0.1:5500/index.html#contact">Contact</a></li></ul></div>
+      <div class="footer-section"><h3>Services</h3><ul><li><a href="http://127.0.0.1:5500/index.html#services">Turnkey Construction</a></li><li><a href="http://127.0.0.1:5500/index.html#services">Educational Buildings</a></li><li><a href="http://127.0.0.1:5500/index.html#services">Healthcare Facilities</a></li><li><a href="http://127.0.0.1:5500/index.html#services">Residential Projects</a></li><li><a href="http://127.0.0.1:5500/index.html#services">Commercial Complexes</a></li><li><a href="http://127.0.0.1:5500/index.html#services">Renovation Services</a></li></ul></div>
+      <div class="footer-section"><h3>Get in Touch</h3><div class="footer-contact-info"><div class="footer-contact-item"><strong>Office:</strong><span>32, Krishna Vihar, Jakhan, Dehradun</span></div><div class="footer-contact-item"><strong>Phone:</strong><a href="tel:+919837244667">+91 9837244667</a></div><div class="footer-contact-item"><strong>Email:</strong><a href="mailto:vivekg1704@gmail.com">vivekg1704@gmail.com</a></div></div>
+        <div class="footer-social">
+          <a href="http://127.0.0.1:5500/index.html#" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="http://127.0.0.1:5500/index.html#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="http://127.0.0.1:5500/index.html#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="http://127.0.0.1:5500/index.html#" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-bottom-left">© 2025 <span>InderLal Constructions</span>. All rights reserved. | Designed with Excellence</div>
+      <div class="footer-bottom-right"><a href="http://127.0.0.1:5500/index.html#">Privacy Policy</a><a href="http://127.0.0.1:5500/index.html#">Terms of Service</a><a href="http://127.0.0.1:5500/index.html#">Sitemap</a></div>
+    </div>
+  </div>
+</footer>
+
+<!-- ==== SCRIPTS ==== -->
+<script src="./InderLal Constructions_files/aos.js.download"></script>
+<script>
+  // Mobile menu
+  const toggle = document.querySelector('.mobile-menu-toggle');
+  const nav = document.querySelector('.nav-links');
+  toggle.addEventListener('click', () => { toggle.classList.toggle('active'); nav.classList.toggle('active'); });
+
+  // Header scroll
+  window.addEventListener('scroll', () => document.querySelector('header').classList.toggle('scrolled', window.scrollY > 50));
+
+  // AOS init
+  AOS.init({ duration: 800, easing: 'ease-out-quart', once: true });
+
+  // Lazy load images (native)
+  document.addEventListener("DOMContentLoaded", function() {
+    const lazyImages = document.querySelectorAll("img[loading='lazy']");
+    if ("IntersectionObserver" in window) {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => { if (entry.isIntersecting) { entry.target.src = entry.target.dataset.src || entry.target.src; observer.unobserve(entry.target); } });
+      });
+      lazyImages.forEach(img => observer.observe(img));
+    }
+  });
+</script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+<span id="PING_IFRAME_FORM_DETECTION" style="display: none;"></span></body></html>
